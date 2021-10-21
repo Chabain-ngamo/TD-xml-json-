@@ -1,4 +1,4 @@
-package tp1;
+package Devoir1A;
 
 /**
  * L'exception IFT287Exception est levee lorsqu'une transaction est inadequate.

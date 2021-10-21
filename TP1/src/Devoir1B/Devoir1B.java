@@ -1,20 +1,18 @@
-// Travail fait par :
-//   NomEquipier1 - Matricule
-//   NomEquipier2 - Matricule
+// Travail fait par :   
+//  TCHOUNGA Jordan
+//	NGAMO Chabain
+//	FAMENI Steve
+//	NGAMALEU Iris
 
-package tp1;
+package Devoir1B;
 
 /**
  * Fichier de base pour le Devoir1B du cours IFT287
  *
- * <pre>
  * 
- * Vincent Ducharme
- * Universite de Sherbrooke
- * Version 1.0 - 6 août 2016
  * IFT287 - Exploitation de BD relationnelles et OO
  * 
- * Ce programme permet de convertir un fichier JSON en son équivalent en XML.
+ * Ce programme permet de convertir un fichier JSON en son Equivalent en XML.
  *
  * Paramètres du programme
  * 0- Nom du fichier JSON

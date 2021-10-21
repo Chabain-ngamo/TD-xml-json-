@@ -7,5 +7,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="json-20170516.jar"/>
+	<classpathentry kind="lib" path="DataSerializer-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="javax.json-1.0.4.jar"/>
+	<classpathentry kind="lib" path="javax.json-api-1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
