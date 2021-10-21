@@ -10,6 +10,7 @@ import org.json.XML;
 /**
  * Fichier de base pour le Devoir1A du cours IFT287
  * <pre>
+ * 
  * Vincent Ducharme
  * Universite de Sherbrooke
  * Version 1.0 - 6 août 2016
