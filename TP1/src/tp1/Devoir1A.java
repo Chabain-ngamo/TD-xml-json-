@@ -9,7 +9,6 @@ import org.json.XML;
 
 /**
  * Fichier de base pour le Devoir1A du cours IFT287
- *
  * <pre>
  * 
  * Vincent Ducharme
