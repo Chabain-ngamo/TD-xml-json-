@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT MainBody (Systems,Organs)>
+<!ELEMENT Systems (System+)>
+<!ELEMENT System (Flow+)>
+<!ELEMENT Flow (Connectible,Connections)>
+<!ELEMENT Connectible (Atrium|Ventricle|Artery|Vein|Capillaries|Nose|AirConnectible|Alveoli|DigestiveTract|StomachTract|DuodenumTract|RectumTract|BiDuct|Duct|DuctOverflowableJunction|DeversingDuct|InnerGallbladder|SalivaryDuct)*
+<!ELEMENT Atrium EMPTY>
+<!ELEMENT ventricle EMPTY>
+<!ELEMENT Artery EMPTY>
+<!ELEMENT Vein EMPTY>
+<!ELEMENT Capillaries EMPTY>
+<!ELEMENT Nose EMPTY>
+<!ELEMENT AirConnectible EMPTY>
+<!ELEMENT Alveoli EMPTY>
+<!ELEMENT DigestiveTract EMPTY>
+<!ELEMENT RectumTract EMPTY>
+<!ELEMENT DuodeTract EMPTY>
+<!ELEMENT stomacTract EMPTY>
+<!ELEMENT BiDuct EMPTY>
+<!ELEMENT Duct EMPTY>
+<!ELEMENT DuctOverflowableJunction EMPTY>
+<!ELEMENT DeversingDuct EMPTY>
+<!ELEMENT InnerGallbladder EMPTY>
+<!ELEMENT SalivaryDuct EMPTY>
+<!ELEMENT Connections (Connection+)>
+<!ELEMENT Connection (to+)>
+<!ELEMENT to EMPTY>
+<!ELEMENT Organs (Organ+)>
+<!ELEMENT Organ EMPTY>
+
+<!ATTLIST MainBody 
+    bodyName CDATA #REQUIRED
+    bodyID ID #REQUIRED
+>
+
+<!ATTLIST System
+    name CDATA #REQUIRED
+    id ID #REQUIRED
+    type CDATA #REQUIRED
+>
+
+<!ATTLIST Flow
+    id ID #REQUIRED
+    name CDATA #REQUIRED
+>
+
+<!ATTLIST Atrium
+    name CDATA #REQUIRED
+    id ID #REQUIRED
+    volume CDATA #REQUIRED
+>
+
+<!ATTLIST Ventricle
+    name CDATA #REQUIRED
+    id ID #REQUIRED
+    volume CDATA #REQUIRED
+>
+
+<!ATTLIST Artery
+    name CDATA #REQUIRED
+    id ID #REQUIRED
+    startRadius CDATA #REQUIRED
+    endRadius CDATA #REQUIRED
+    length CDATA #REQUIRED
+>
+
+<!ATTLIST Vein
+    name CDATA #REQUIRED
+    id ID #REQUIRED
+    startRadius CDATA #REQUIRED
+    endRadius CDATA #REQUIRED
+    length CDATA #REQUIRED
+>
+
+<!ATTLIST Capillaries
+    name CDATA #REQUIRED
+    id ID #REQUIRED
+    volume CDATA #REQUIRED
+>
+
+<!ATTLIST Nose
+    name CDATA #REQUIRED
+    id ID #REQUIRED
+>
+
+<!ATTLIST AirConnectible
+    name CDATA #REQUIRED
+    id ID #REQUIRED
+    startRadius CDATA #REQUIRED
+    endRadius CDATA #REQUIRED
+    length CDATA #REQUIRED
+>
+
+<!ATTLIST Alveoli
+    name CDATA #REQUIRED
+    id ID #REQUIRED
+    volume CDATA #REQUIRED
+>
+
+<!ATTLIST DigestiveTract
+    name CDATA #REQUIRED
+    id ID #REQUIRED
+    length CDATA #REQUIRED
+    volume CDATA #REQUIRED
+>
+
+<!ATTLIST StomachTract
+    name CDATA #REQUIRED
+    id ID #REQUIRED
+    length CDATA #REQUIRED
+    volume CDATA #REQUIRED
+>
+
+<!ATTLIST DuodenumTract
+    name CDATA #REQUIRED
+    id ID #REQUIRED
+    volume CDATA #REQUIRED
+>
+
+<!ATTLIST RectumTract
+    name CDATA #REQUIRED
+    id ID #REQUIRED
+    length CDATA #REQUIRED
+    volume CDATA #REQUIRED
+>
+
+<!ATTLIST BiDuct
+    name CDATA #REQUIRED
+    id ID #REQUIRED
+>
+
+<!ATTLIST Duct
+    name CDATA #REQUIRED
+    id ID #REQUIRED
+>
+
+<!ATTLIST DuctOverflowableJunction
+    name CDATA #REQUIRED
+    id ID #REQUIRED
+>
+
+<!ATTLIST DeversingDuct
+    name CDATA #REQUIRED
+    id ID #REQUIRED
+>
+
+<!ATTLIST InnerGallbladder
+    name CDATA #REQUIRED
+    id ID #REQUIRED
+>
+
+<!ATTLIST SalivaryDuct
+    name CDATA #REQUIRED
+    id ID #REQUIRED
+    length CDATA #REQUIRED
+    volume CDATA #REQUIRED
+>
+
+<!ATTLIST Connection
+    id ID #REQUIRED
+>
+
+<!ATTLIST to
+    id IDREF #REQUIRED
+>
+
+<!ATTLIST Organ 
+    name CDATA #REQUIRED
+    id ID #REQUIRED
+    systemID IDREF #REQUIRED
+>
+
+
